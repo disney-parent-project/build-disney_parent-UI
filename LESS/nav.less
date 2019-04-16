@@ -1,0 +1,40 @@
+.nav-bar {
+    .width-100();
+    display:flex;
+    justify-content:center;
+    height: 4rem;
+    .container {
+      .width-100();
+      display:flex;
+      justify-content:center;
+      align-items: center;
+      color: @disney-light-blue;
+      letter-spacing: 1px;
+      padding: 0 10px;
+      }
+      .container-left {
+        .flex(none, center);
+        font-size: 2.6rem;
+        ul{
+            flex-wrap:wrap;
+        }
+        li {
+          cursor: pointer;
+          font-weight: bold;
+          display:inline-block;
+          text-decoration:none;
+        }
+        &:hover {
+            text-decoration: underline;
+          }
+      }
+      .container-center {
+        .flex(center, center);
+        flex: 3;
+        font-size: 3rem;
+          cursor: pointer;
+          margin-right: 5%;
+        }
+}
+
+  
