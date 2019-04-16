@@ -1,0 +1,18 @@
+@disney-blue: #303EFF;
+@disney-light-blue: lighten(@disney-blue,10%);
+@disney-purple: #8320E8;
+
+.width-100 {
+    width: 100%;
+  }
+  
+  .border-bottom-light-blue {
+    border-bottom: 1px solid @disney-light-blue;
+  }
+  
+  .flex(@jc: none, @ai: none, @dir: row) {
+    display: flex;
+    justify-content: @jc;
+    align-items: @ai;
+    flex-direction: @dir;
+  }

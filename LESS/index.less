@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  html, body {
+    font-family: 'WaltographRegular'; 
+   font-weight: normal; 
+   font-style: normal; 
+  }
+  
+  h1, h2, h3, h4, h5 {
+    font-family: 'Indie Flower', cursive;
+  }
+  
+  h1 {
+    font-size: 4rem;
+  }
+  
+  h2 {
+    font-size: 3.2rem;
+    padding-bottom: 1rem;
+  }
+  
+  h4 {
+    font-size: 2.5rem;
+    padding-bottom: 10px;
+  }
+  
+  p {
+    line-height: 1.5;
+    font-size: 1.6rem;
+    padding-bottom: 1rem;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  
+  @import './mixins.less';
+  @import './slideshow.less';
+  @import './nav.less';
+  //@import '../components/Tabs/Tabs.less';
+  
+  
+  .section {
+    width: 70%;
+    margin: 4.5rem auto;
+    display: flex;
+    border: .1rem solid @disney-blue;
+    box-shadow: .1rem .1rem .5rem @disney-blue;
+    border-radius: 1rem;
+    overflow: hidden;
+    .box {
+      padding: 4rem;
+      .title {
+        font-size: 4rem;
+        padding-bottom: 1rem;
+        font-weight: bold;
+      }
+    }
+  }
+  
+  
