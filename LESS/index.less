@@ -1,3 +1,4 @@
+@import './reset.less';
 * {
     box-sizing: border-box;
   }
@@ -38,7 +39,12 @@
   
   img {
     max-width: 100%;
-    height: auto;
+    height: 55rem;
+    border: .1rem solid @disney-blue;
+    box-shadow: .1rem .1rem .5rem @disney-blue;
+    border-radius: 30rem;
+    object-fit: cover;
+    position: relative;
   }
   
   
@@ -62,6 +68,11 @@
         font-size: 4rem;
         padding-bottom: 1rem;
         font-weight: bold;
+        color: @disney-purple;
+      }
+      .description {
+        font-family: 'Montserrat', sans-serif;
+          font-size: 1.6rem;
       }
     }
   }

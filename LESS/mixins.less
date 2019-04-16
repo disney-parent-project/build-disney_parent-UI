@@ -2,17 +2,63 @@
 @disney-light-blue: lighten(@disney-blue,10%);
 @disney-purple: #8320E8;
 
+@mobile: ~"(max-width: 500px)";
+
+// Color assignments 
+@font-color: @disney-blue;
+@button-bg: @eastern-blue;
+@main-bg:  @white;
+@navigation-border: @silver;
+@footer-bg: @sandy-beach;
+
+// Colors
+@white: #FFFFFF;
+@silver: #C0C0C0;
+@shark: #212529;
+@eastern-blue: #17A2B8;
+@sandy-beach: #FFEBCD;
 .width-100 {
     width: 100%;
   }
   
-  .border-bottom-light-blue {
-    border-bottom: 1px solid @disney-light-blue;
-  }
   
   .flex(@jc: none, @ai: none, @dir: row) {
     display: flex;
     justify-content: @jc;
     align-items: @ai;
     flex-direction: @dir;
+  }
+
+.center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .border-radius(@radius) {
+    -webkit-border-radius: @radius;
+       -moz-border-radius: @radius;
+            border-radius: @radius;
+  }
+  
+
+.button-creator(@width, @height, @bg-color, @font-color, @font-size) {
+    .border-radius(2rem);
+    .center;
+    width: @width;
+    height: @height;
+    background-color: @bg-color;
+    color: @font-color;
+    border: 1px solid @silver;
+    cursor: pointer;
+    font-size: @font-size;
+  
+    @media @mobile {
+      width: 100%;
+    }
+    
+    &:hover {
+      background: @disney-blue;
+      color: @white;
+    }
   }
