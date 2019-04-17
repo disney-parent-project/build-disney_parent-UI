@@ -11,8 +11,10 @@
     overflow: hidden;
 
     @media @mobile {
+      background:none;
         margin: 2rem 0 0.5rem 0;
-        box-shadow: .5rem .5rem .5rem @disney-gold;  
+        line-height:2rem;
+        // box-shadow: .5rem .5rem .5rem @disney-gold;  
     }
     .box {
       padding: 4rem;;
@@ -27,6 +29,9 @@
 
         @media @mobile{
             font-size: 3rem;
+            color:@disney-gold;
+            line-height:4rem;
+            margin-left:3rem;
         }
       }
       .move{
@@ -34,13 +39,27 @@
           padding-bottom: 1rem;
 
           @media @mobile {
-              margin-left: 10rem;
+              margin-left: 8.8rem;
           }
       }
       .description {
         font-family:'Merienda', cursive;
         font-size: 1.6rem;
         padding-top:3rem;
+
+        @media @mobile{
+          line-height:2.3rem;
+
+      span{
+        font-family: 'WaltographRegular'; 
+        font-size:2.5rem;
+        color:@disney-blue;
+
+        @media @mobile{
+          color:@disney-gold;
+        }
+      }     
+        }
       }
     }
   }
@@ -65,12 +84,21 @@
 }
 
 .app-link{
-    min-height:50rem;
+  min-height:50rem;
 	height:100%;
 	background: url('../img/couple.jpg') center center;
 	background-size:cover;
     position:relative;
 
+    @media @mobile {
+      width:90%;
+      max-height: 30rem;
+      margin: 0 2rem;
+      border: .1rem solid @disney-gold;
+      box-shadow: .1rem .1rem .5rem @disney-dark-gold;
+      border-radius: 1rem;
+      overflow: hidden;
+    }
     h2{
         margin:0 0 5.5rem 2.5rem;
         padding: 4rem 0 0 30rem;

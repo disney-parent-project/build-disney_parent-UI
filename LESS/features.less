@@ -7,16 +7,23 @@
         width:100%;
 	    margin:0 auto;
 	    display:flex;
-        padding: 11.5rem 0;
+        padding: 1rem 0;
 
+        h2{
+            margin:0 0 5.5rem 2.5rem;
+            padding: 4rem 0 0 30rem;
+            color: @disney-dark-gold;
+        }
         @media @mobile{
             flex-direction:column;
             padding: 0 0;
+
+            
         }
         
     .third-width {
             width:33.3%;
-            height: 30rem;
+            height: 35rem;
             margin: 0 2rem;
             display: flex;
             flex-direction: column;
@@ -26,11 +33,29 @@
             border-radius: 1rem;
             overflow: hidden;
 
+            
+	img {
+        padding-bottom: 3rem;
+        max-width: 30.5%;
+        height: auto;
+        border: none;
+        box-shadow: none;
+        border-radius: 0;
+        object-fit: cover;
+        position: relative;
+    }
+    
+    .shift {
+       max-width:35%;
+    }
+
             @media @mobile {
                 width:90%;
-               margin-bottom:1rem;
+               margin-bottom:2rem;
                border:none;
-               box-shadow: .5rem .5rem .5rem .5rem @disney-gold;  
+               background:linear-gradient(to right,#fcf4e9, #E9B870 );
+              
+        
 
                h3{
                    font-size:2rem;
@@ -38,6 +63,8 @@
 
                p{
                    font-size:1.2rem;
+               }
+
                }
             }
 
@@ -50,14 +77,13 @@
                 color:@disney-dark-gold;
                 font-size:5rem;
                 margin:1rem 4rem;
+
+                @media @mobile{
+                    color:@disney-blue;
+                }
             }
         }
-	}
-
-	img {
-		padding-bottom: 3rem;
-	}
-
+        
 	h3 {
 		font-size:2.4rem;
 		line-height:3.2rem;
@@ -70,5 +96,5 @@
 		font-size:1.4rem;
 		line-height:3rem;
 		padding: 0 5rem 1rem;
-	}
+    }
 }
