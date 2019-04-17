@@ -415,7 +415,6 @@ img {
   min-height: 40rem;
   margin: 4.5rem auto;
   display: flex;
-  background: linear-gradient(to right, #E9B870, #fcf4e9);
   box-shadow: 0.1rem 0.1rem 0.5rem #dd9222;
   overflow: hidden;
 }
@@ -429,6 +428,7 @@ img {
   display: flex;
   justify-content: center;
   padding-top: 4.4rem;
+  border-radius: 2rem;
 }
 .review-section .reviews .review-item {
   display: none;
@@ -438,25 +438,27 @@ img {
   font-size: 24px;
   font-weight: bold;
   padding-bottom: 10px;
+  color: #41414C;
 }
 .review-section .reviews .review-item-selected {
   display: flex;
   justify-content: space-between;
+  color: #41414C;
 }
 .review-section .reviews .reviews-links {
   display: flex;
-  background-color: #8320E8;
+  background-color: #303EFF;
 }
 .review-section .reviews .reviews-link {
   padding: 10px 72px;
   font-size: 24px;
-  background-color: #8320E8;
+  background-color: #303EFF;
   border-right: 1px solid white;
   color: #FFFFFF;
   cursor: pointer;
 }
 .review-section .reviews .reviews-link:hover {
-  background-color: #9d4eed;
+  background-color: #636eff;
   color: #E9B870;
 }
 .review-section .reviews .reviews-link-selected {
@@ -466,13 +468,13 @@ img {
   color: #E9B870;
 }
 .review-section .reviews .reviews-link-selected:hover {
-  background-color: #9d4eed;
+  background-color: #636eff;
 }
 .review-section .reviews .review-image {
   height: 23rem;
 }
 .footer {
-  min-height: 50rem;
+  min-height: 60rem;
   height: 100%;
   background: url('../img/castle-day.jpg') center center;
   background-size: cover;
@@ -501,6 +503,7 @@ img {
   font-weight: lighter;
   font-style: normal;
   margin-left: 104rem;
+  border-color: #E9B870;
   box-shadow: 0.5rem 0.5rem 0.5rem #E9B870;
 }
 @media (max-width: 500px) {
@@ -581,6 +584,7 @@ img {
   font-weight: lighter;
   font-style: normal;
   margin-left: 50rem;
+  border-color: #E9B870;
   box-shadow: 0.5rem 0.5rem 0.5rem #E9B870;
 }
 @media (max-width: 500px) {
