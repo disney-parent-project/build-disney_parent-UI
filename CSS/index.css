@@ -143,7 +143,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Indie Flower', cursive;
+  font-family: 'WaltographRegular';
 }
 h1 {
   font-size: 4rem;
@@ -164,7 +164,7 @@ p {
 img {
   max-width: 100%;
   height: 55rem;
-  border: 0.1rem solid #303EFF;
+  border: 0.1rem solid #dd9222;
   box-shadow: 0.1rem 0.1rem 0.5rem #303EFF;
   border-radius: 30rem;
   object-fit: cover;
@@ -195,7 +195,7 @@ img {
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color: white;
+  color: #E9B870;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -214,7 +214,7 @@ img {
 }
 /* Caption text */
 .text {
-  color: #f2f2f2;
+  color: #FFFFFF;
   font-size: 2.5rem;
   padding: 0.8rem 1.2rem;
   position: absolute;
@@ -224,7 +224,7 @@ img {
 }
 /* Number text (1/3 etc) */
 .numbertext {
-  color: #f2f2f2;
+  color: #E9B870;
   font-size: 1.6rem;
   padding: 0.8rem 1.6rem;
   position: absolute;
@@ -236,14 +236,14 @@ img {
   height: 1.5rem;
   width: 1.5rem;
   margin: 0 0.2rem;
-  background-color: #bbb;
+  background-color: #dd9222;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 .active,
 .dot:hover {
-  background-color: #717171;
+  background-color: #303EFF;
 }
 /* Fading animation */
 .fade {
@@ -280,18 +280,18 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #636eff;
+  color: #E9B870;
   letter-spacing: 0.1rem;
   padding: 0 1rem;
-  border-bottom: 0.2rem solid #636eff;
-  box-shadow: 0.1rem 0.1rem 0.5rem #303EFF;
+  border-bottom: 0.2rem solid #E9B870;
+  box-shadow: 0.1rem 0.1rem 0.5rem #E9B870;
 }
 .nav-bar .container-left {
   display: flex;
   justify-content: none;
   align-items: center;
   flex-direction: row;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Merienda', cursive;
   font-size: 1.6rem;
 }
 .nav-bar .container-left ul {
@@ -301,7 +301,6 @@ img {
   cursor: pointer;
   display: inline-block;
   text-decoration: none;
-  color: #303EFF;
   padding: 0 2rem;
 }
 .nav-bar .container-left li a {
@@ -309,6 +308,7 @@ img {
 }
 .nav-bar .container-left li a:hover {
   text-decoration: underline;
+  color: #8320E8;
 }
 .nav-bar .container-center {
   display: flex;
@@ -317,6 +317,7 @@ img {
   flex-direction: row;
   flex: 3;
   font-size: 3rem;
+  color: #E9B870;
   cursor: pointer;
   margin-right: 5%;
 }
@@ -330,14 +331,14 @@ img {
   width: 20rem;
   height: 4.1rem;
   background-color: #FFFFFF;
-  color: #303EFF;
-  border: 1px solid #C0C0C0;
+  color: #E9B870;
+  border: 1px solid #636eff;
   cursor: pointer;
   font-size: 2.5rem;
   font-family: 'WaltographRegular';
   font-weight: lighter;
   font-style: normal;
-  box-shadow: 0.1rem 0.1rem 0.5rem #303EFF;
+  box-shadow: 0.1rem 0.1rem 0.5rem #E9B870;
 }
 @media (max-width: 500px) {
   .nav-bar .btn {
@@ -345,15 +346,124 @@ img {
   }
 }
 .nav-bar .btn:hover {
-  background: #303EFF;
+  background: #636eff;
   color: #FFFFFF;
+}
+.features {
+  text-align: center;
+}
+.features .full-width {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  padding: 11.5rem 0;
+}
+.features .full-width .third-width {
+  width: 33.3%;
+  height: 30rem;
+  margin: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  border: 0.1rem solid #E9B870;
+  box-shadow: 0.1rem 0.1rem 0.5rem #dd9222;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.features .full-width .third-width .fa-user-plus,
+.features .full-width .third-width .fa-handshake,
+.features .full-width .third-width .fa-grin-alt {
+  margin-top: 3rem;
+  color: #dd9222;
+  font-size: 3rem;
+}
+.features img {
+  padding-bottom: 3rem;
+}
+.features h3 {
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  width: 33%;
+  margin: 0 auto;
+}
+.features p {
+  font-family: 'WaltographRegular';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  padding: 0 5rem;
+}
+.header {
+  min-height: 50rem;
+  height: 100%;
+  background: url('../img/castle.jpg') center center;
+  background-size: cover;
+  position: relative;
+}
+.header h1 {
+  font-size: 6rem;
+  color: #FFFFFF;
+  padding: 16.3rem 0 2.5rem 61.4rem;
+}
+.header h3 {
+  font-family: 'Merienda', cursive;
+  font-size: 3rem;
+  color: #FFFFFF;
+  padding: 18.6rem 0 2.5rem 36.5rem;
+}
+.reviews {
+  width: 100%;
+}
+.reviews .review-items {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+}
+.reviews .review-item {
+  display: none;
+  width: 75%;
+}
+.reviews .review-item .review-item-title {
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.reviews .review-item-selected {
+  display: block;
+}
+.reviews .reviews-links {
+  display: flex;
+  background-color: #8320E8;
+}
+.reviews .reviews-link {
+  padding: 20px 25px;
+  font-size: 24px;
+  background-color: #8320E8;
+  border-right: 1px solid white;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.reviews .reviews-link:hover {
+  background-color: #9d4eed;
+}
+.reviews .reviews-link-selected {
+  z-index: 2;
+  border-right: 1px solid #8320E8;
+  background-color: #8320E8;
+  color: #FFFFFF;
+}
+.reviews .reviews-link-selected:hover {
+  background-color: #9d4eed;
 }
 .section {
   width: 70%;
   margin: 4.5rem auto;
   display: flex;
-  border: 0.1rem solid #303EFF;
-  box-shadow: 0.1rem 0.1rem 0.5rem #303EFF;
+  border: 0.1rem solid #E9B870;
+  box-shadow: 0.1rem 0.1rem 0.5rem #dd9222;
   border-radius: 1rem;
   overflow: hidden;
 }
@@ -367,6 +477,63 @@ img {
   color: #8320E8;
 }
 .section .box .description {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Merienda', cursive;
   font-size: 1.6rem;
+}
+.full-width {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+.half-width {
+  width: 49.5%;
+  flex-flow: row-wrap;
+  justify-content: space-between;
+}
+.parent-image {
+  border-radius: 20rem;
+  margin-left: 2rem;
+  padding: 1rem;
+}
+#app-info {
+  width: 48%;
+  background: url('../img/castle-day.jpg');
+  border: 0.1rem solid #dd9222;
+  box-shadow: 0.1rem 0.1rem 0.5rem #303EFF;
+  margin-left: 3.6rem;
+  border-radius: 30rem;
+}
+#app-info h2 {
+  margin: 9.8rem;
+  padding: 3rem;
+  color: #dd9222;
+}
+#app-info .btn {
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20rem;
+  height: 4.1rem;
+  background-color: #FFFFFF;
+  color: #E9B870;
+  border: 1px solid #636eff;
+  cursor: pointer;
+  font-size: 2.5rem;
+  font-family: 'WaltographRegular';
+  font-weight: lighter;
+  font-style: normal;
+  margin-left: 26rem;
+  box-shadow: 0.5rem 0.5rem 0.5rem #E9B870;
+}
+@media (max-width: 500px) {
+  #app-info .btn {
+    width: 100%;
+  }
+}
+#app-info .btn:hover {
+  background: #636eff;
+  color: #FFFFFF;
 }

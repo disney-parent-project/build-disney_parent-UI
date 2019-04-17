@@ -9,24 +9,24 @@
       display:flex;
       justify-content:center;
       align-items: center;
-      color: @disney-light-blue;
+      color: @disney-gold;
       letter-spacing: .1rem;
       padding: 0 1rem;
-      border-bottom: .2rem solid @disney-light-blue;
-      box-shadow: .1rem .1rem .5rem @disney-blue;
+      border-bottom: .2rem solid @disney-gold;
+      box-shadow: .1rem .1rem .5rem @disney-gold;
       }
       .container-left {
        .flex(none, center);
-       font-family: 'Montserrat', sans-serif;
+       font-family: 'Merienda', cursive;
         font-size: 1.6rem;
+        
         ul{
             flex-wrap:wrap;
         }
         li {
           cursor: pointer;
           display:inline-block;
-          text-decoration:none;
-          color: @disney-blue;
+          text-decoration:none;;
           padding: 0 2rem;
 
           a {
@@ -34,6 +34,7 @@
 
         &:hover {
             text-decoration: underline;
+            color: @disney-purple;
           }
           }
         }
@@ -42,15 +43,16 @@
         .flex(center, center);
         flex: 3;
         font-size: 3rem;
+        color: @disney-gold;
           cursor: pointer;
           margin-right: 5%;
         }
         .btn {
-            .button-creator(20rem, 4.1rem, @white, @disney-blue, 2.5rem);  
+            .button-creator(20rem, 4.1rem, @white, @disney-gold, 2.5rem);  
             font-family: 'WaltographRegular'; 
             font-weight: lighter; 
             font-style: normal;  
-            box-shadow: .1rem .1rem .5rem @disney-blue;  
+            box-shadow: .1rem .1rem .5rem @disney-gold;  
           }
 }
 

@@ -1,0 +1,76 @@
+.header {
+  min-height:50rem;
+	height:100%;
+	background: url('../img/castle.jpg') center center;
+	background-size:cover;
+  position:relative;
+  
+  h1 {
+		font-size: 6rem;
+		color:@white;
+    padding: 16.3rem 0 2.5rem 61.4rem;
+  }
+    h3 {
+      font-family: 'Merienda', cursive;
+      font-size: 3rem;
+      color:@white;
+      padding: 18.6rem 0 2.5rem 36.5rem;
+  
+    }
+	}
+
+
+  
+
+.reviews {
+    width: 100%;
+    .review-items {
+      width: 100%;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      padding-top: 60px;
+    }
+    .review-item {
+      display: none; 
+  
+      width: 75%;
+      .review-item-title {
+        font-size: 24px;
+        font-weight: bold;
+        padding-bottom: 10px;
+      }
+    }
+    .review-item-selected {
+      display: block;
+    }
+  
+    .reviews-links {
+      display: flex;
+      background-color: @disney-purple;
+    }
+  
+    .reviews-link {
+      padding: 20px 25px;
+      font-size: 24px;
+      background-color: @disney-purple;
+      border-right: 1px solid white;
+      color: @white;
+      cursor: pointer;
+      &:hover {
+        background-color: @disney-light-purple;
+      }
+    }
+    .reviews-link-selected {
+      z-index: 2;
+      border-right: 1px solid @disney-purple;
+      background-color: @disney-purple;
+      color:@white;
+      &:hover {
+        background-color: @disney-light-purple;
+      }
+    }
+  }
+  
+  
+  

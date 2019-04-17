@@ -1,22 +1,22 @@
-@disney-blue: #303EFF;
-@disney-light-blue: lighten(@disney-blue,10%);
-@disney-purple: #8320E8;
+
 
 @mobile: ~"(max-width: 500px)";
 
 // Color assignments 
 @font-color: @disney-blue;
-@button-bg: @eastern-blue;
+@button-bg: @disney-blue;
 @main-bg:  @white;
-@navigation-border: @silver;
-@footer-bg: @sandy-beach;
+@navigation-border: @disney-light-blue;
+@footer-bg: @disney-light-blue;
 
 // Colors
+@disney-blue: #303EFF;
+@disney-light-blue: lighten(@disney-blue,10%);
+@disney-purple: #8320E8;
+@disney-light-purple: lighten(@disney-purple, 10%);
+@disney-gold:#E9B870; 
+@disney-dark-gold:#dd9222;
 @white: #FFFFFF;
-@silver: #C0C0C0;
-@shark: #212529;
-@eastern-blue: #17A2B8;
-@sandy-beach: #FFEBCD;
 .width-100 {
     width: 100%;
   }
@@ -49,7 +49,7 @@
     height: @height;
     background-color: @bg-color;
     color: @font-color;
-    border: 1px solid @silver;
+    border: 1px solid @disney-light-blue;
     cursor: pointer;
     font-size: @font-size;
   
@@ -58,7 +58,7 @@
     }
     
     &:hover {
-      background: @disney-blue;
+      background: @disney-light-blue;
       color: @white;
     }
   }
