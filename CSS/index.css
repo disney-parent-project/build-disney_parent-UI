@@ -214,7 +214,7 @@ img {
 }
 /* Caption text */
 .text {
-  color: #FFFFFF;
+  color: #303EFF;
   font-size: 2.5rem;
   padding: 0.8rem 1.2rem;
   position: absolute;
@@ -308,7 +308,7 @@ img {
 }
 .nav-bar .container-left li a:hover {
   text-decoration: underline;
-  color: #8320E8;
+  color: #303EFF;
 }
 .nav-bar .container-center {
   display: flex;
@@ -346,7 +346,7 @@ img {
   }
 }
 .nav-bar .btn:hover {
-  background: #636eff;
+  background: #303EFF;
   color: #FFFFFF;
 }
 .features {
@@ -387,12 +387,10 @@ img {
   margin: 0 auto;
 }
 .features p {
-  font-family: 'WaltographRegular';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 1.8rem;
+  font-family: 'Merienda', cursive;
+  font-size: 1.4rem;
   line-height: 3rem;
-  padding: 0 5rem;
+  padding: 0 5rem 1rem;
 }
 .header {
   min-height: 50rem;
@@ -412,69 +410,127 @@ img {
   color: #FFFFFF;
   padding: 18.6rem 0 2.5rem 36.5rem;
 }
-.reviews {
+.review-section {
+  width: 75%;
+  min-height: 40rem;
+  margin: 4.5rem auto;
+  display: flex;
+  background: linear-gradient(to right, #E9B870, #fcf4e9);
+  box-shadow: 0.1rem 0.1rem 0.5rem #dd9222;
+  overflow: hidden;
+}
+.review-section .reviews {
   width: 100%;
 }
-.reviews .review-items {
+.review-section .reviews .review-items {
   width: 100%;
-  height: 300px;
+  height: auto;
+  min-height: 300px;
   display: flex;
   justify-content: center;
-  padding-top: 60px;
+  padding-top: 4.4rem;
 }
-.reviews .review-item {
+.review-section .reviews .review-item {
   display: none;
   width: 75%;
 }
-.reviews .review-item .review-item-title {
+.review-section .reviews .review-item .review-item-title {
   font-size: 24px;
   font-weight: bold;
   padding-bottom: 10px;
 }
-.reviews .review-item-selected {
-  display: block;
+.review-section .reviews .review-item-selected {
+  display: flex;
+  justify-content: space-between;
 }
-.reviews .reviews-links {
+.review-section .reviews .reviews-links {
   display: flex;
   background-color: #8320E8;
 }
-.reviews .reviews-link {
-  padding: 20px 25px;
+.review-section .reviews .reviews-link {
+  padding: 10px 72px;
   font-size: 24px;
   background-color: #8320E8;
   border-right: 1px solid white;
   color: #FFFFFF;
   cursor: pointer;
 }
-.reviews .reviews-link:hover {
+.review-section .reviews .reviews-link:hover {
+  background-color: #9d4eed;
+  color: #E9B870;
+}
+.review-section .reviews .reviews-link-selected {
+  z-index: 2;
+  border-right: 1px solid #dd9222;
+  background-color: #FFFFFF;
+  color: #E9B870;
+}
+.review-section .reviews .reviews-link-selected:hover {
   background-color: #9d4eed;
 }
-.reviews .reviews-link-selected {
-  z-index: 2;
-  border-right: 1px solid #8320E8;
-  background-color: #8320E8;
+.review-section .reviews .review-image {
+  height: 23rem;
+}
+.footer {
+  min-height: 50rem;
+  height: 100%;
+  background: url('../img/castle-day.jpg') center center;
+  background-size: cover;
+  position: relative;
+}
+.footer h2 {
+  font-size: 4.5rem;
+  color: #E9B870;
+  padding: 27.3rem 0 5.5rem 83rem;
+}
+.footer .btn {
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20rem;
+  height: 4.1rem;
+  background-color: #FFFFFF;
+  color: #E9B870;
+  border: 1px solid #636eff;
+  cursor: pointer;
+  font-size: 2.5rem;
+  font-family: 'WaltographRegular';
+  font-weight: lighter;
+  font-style: normal;
+  margin-left: 104rem;
+  box-shadow: 0.5rem 0.5rem 0.5rem #E9B870;
+}
+@media (max-width: 500px) {
+  .footer .btn {
+    width: 100%;
+  }
+}
+.footer .btn:hover {
+  background: #303EFF;
   color: #FFFFFF;
 }
-.reviews .reviews-link-selected:hover {
-  background-color: #9d4eed;
-}
 .section {
-  width: 70%;
+  width: 100%;
+  min-height: 40rem;
   margin: 4.5rem auto;
   display: flex;
-  border: 0.1rem solid #E9B870;
-  box-shadow: 0.1rem 0.1rem 0.5rem #dd9222;
-  border-radius: 1rem;
+  background: linear-gradient(to right, #fcf4e9, #E9B870);
   overflow: hidden;
 }
 .section .box {
   padding: 4rem;
 }
 .section .box .title {
-  font-size: 4rem;
-  padding-bottom: 1rem;
+  font-size: 6rem;
   font-weight: bold;
-  color: #8320E8;
+  color: #303EFF;
+}
+.section .box .move {
+  margin-left: 78rem;
+  padding-bottom: 1rem;
 }
 .section .box .description {
   font-family: 'Merienda', cursive;
@@ -495,20 +551,19 @@ img {
   margin-left: 2rem;
   padding: 1rem;
 }
-#app-info {
-  width: 48%;
-  background: url('../img/castle-day.jpg');
-  border: 0.1rem solid #dd9222;
-  box-shadow: 0.1rem 0.1rem 0.5rem #303EFF;
-  margin-left: 3.6rem;
-  border-radius: 30rem;
+.app-link {
+  min-height: 50rem;
+  height: 100%;
+  background: url('../img/couple.jpg') center center;
+  background-size: cover;
+  position: relative;
 }
-#app-info h2 {
-  margin: 9.8rem;
-  padding: 3rem;
+.app-link h2 {
+  margin: 0 0 5.5rem 2.5rem;
+  padding: 4rem 0 0 30rem;
   color: #dd9222;
 }
-#app-info .btn {
+.app-link .btn {
   -webkit-border-radius: 2rem;
   -moz-border-radius: 2rem;
   border-radius: 2rem;
@@ -525,15 +580,15 @@ img {
   font-family: 'WaltographRegular';
   font-weight: lighter;
   font-style: normal;
-  margin-left: 26rem;
+  margin-left: 50rem;
   box-shadow: 0.5rem 0.5rem 0.5rem #E9B870;
 }
 @media (max-width: 500px) {
-  #app-info .btn {
+  .app-link .btn {
     width: 100%;
   }
 }
-#app-info .btn:hover {
-  background: #636eff;
+.app-link .btn:hover {
+  background: #303EFF;
   color: #FFFFFF;
 }

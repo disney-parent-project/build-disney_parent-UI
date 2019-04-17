@@ -20,16 +20,26 @@
 	}
 
 
-  
+.review-section {
+    width: 75%;
+    min-height:40rem;
+    margin: 4.5rem auto;
+    display: flex;
+    background:linear-gradient(to right, #E9B870, #fcf4e9 );
+    // border: .1rem solid @disney-gold;
+    box-shadow: .1rem .1rem .5rem @disney-dark-gold;
+    // border-radius: 1rem;
+    overflow: hidden;
 
 .reviews {
     width: 100%;
     .review-items {
       width: 100%;
-      height: 300px;
+      height: auto;
+      min-height:300px;
       display: flex;
       justify-content: center;
-      padding-top: 60px;
+      padding-top: 4.4rem;
     }
     .review-item {
       display: none; 
@@ -42,7 +52,8 @@
       }
     }
     .review-item-selected {
-      display: block;
+      display: flex;
+      justify-content: space-between;
     }
   
     .reviews-links {
@@ -51,7 +62,7 @@
     }
   
     .reviews-link {
-      padding: 20px 25px;
+      padding: 10px 72px;
       font-size: 24px;
       background-color: @disney-purple;
       border-right: 1px solid white;
@@ -59,18 +70,42 @@
       cursor: pointer;
       &:hover {
         background-color: @disney-light-purple;
+        color:@disney-gold;
       }
     }
     .reviews-link-selected {
       z-index: 2;
-      border-right: 1px solid @disney-purple;
-      background-color: @disney-purple;
-      color:@white;
+      border-right: 1px solid @disney-dark-gold;
+      background-color: @white;
+      color:@disney-gold;
       &:hover {
         background-color: @disney-light-purple;
-      }
+      } 
+    }
+    .review-image{
+      height:23rem;
     }
   }
-  
-  
-  
+}
+.footer {
+  min-height:50rem;
+	height:100%;
+	background: url('../img/castle-day.jpg') center center;
+	background-size:cover;
+  position:relative;
+
+  h2 {
+		font-size: 4.5rem;
+		color:@disney-gold;
+    padding: 27.3rem 0 5.5rem 83rem;
+  }
+
+  .btn {
+    .button-creator(20rem, 4.1rem, @white, @disney-gold, 2.5rem);  
+    font-family: 'WaltographRegular'; 
+    font-weight: lighter; 
+    font-style: normal;  
+    margin-left: 104rem;
+    box-shadow: .5rem .5rem .5rem @disney-gold;  
+  }
+}
