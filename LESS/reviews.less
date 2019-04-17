@@ -20,7 +20,16 @@
 	}
 
 
-  
+.review-section {
+    width: 75%;
+    min-height:40rem;
+    margin: 4.5rem auto;
+    display: flex;
+    background:linear-gradient(to right, #E9B870, #fcf4e9 );
+    // border: .1rem solid @disney-gold;
+    box-shadow: .1rem .1rem .5rem @disney-dark-gold;
+    // border-radius: 1rem;
+    overflow: hidden;
 
 .reviews {
     width: 100%;
@@ -77,6 +86,26 @@
       height:23rem;
     }
   }
-  
-  
-  
+}
+.footer {
+  min-height:50rem;
+	height:100%;
+	background: url('../img/castle-day.jpg') center center;
+	background-size:cover;
+  position:relative;
+
+  h2 {
+		font-size: 4.5rem;
+		color:@disney-gold;
+    padding: 27.3rem 0 5.5rem 83rem;
+  }
+
+  .btn {
+    .button-creator(20rem, 4.1rem, @white, @disney-gold, 2.5rem);  
+    font-family: 'WaltographRegular'; 
+    font-weight: lighter; 
+    font-style: normal;  
+    margin-left: 104rem;
+    box-shadow: .5rem .5rem .5rem @disney-gold;  
+  }
+}
