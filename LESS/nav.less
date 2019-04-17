@@ -2,39 +2,58 @@
     .width-100();
     display:flex;
     justify-content:center;
-    height: 4rem;
+    height: 5rem;
+    text-decoration: none;
     .container {
       .width-100();
       display:flex;
       justify-content:center;
       align-items: center;
-      color: @disney-light-blue;
-      letter-spacing: 1px;
-      padding: 0 10px;
+      color: @disney-gold;
+      letter-spacing: .1rem;
+      padding: 0 1rem;
+      border-bottom: .2rem solid @disney-gold;
+      box-shadow: .1rem .1rem .5rem @disney-gold;
       }
       .container-left {
-        .flex(none, center);
-        font-size: 2.6rem;
+       .flex(none, center);
+       font-family: 'Merienda', cursive;
+        font-size: 1.6rem;
+        
         ul{
             flex-wrap:wrap;
         }
         li {
           cursor: pointer;
-          font-weight: bold;
           display:inline-block;
-          text-decoration:none;
-        }
+          text-decoration:none;;
+          padding: 0 2rem;
+
+          a {
+              text-decoration: none;
+
         &:hover {
             text-decoration: underline;
+            color: @disney-purple;
           }
+          }
+        }
       }
       .container-center {
         .flex(center, center);
         flex: 3;
         font-size: 3rem;
+        color: @disney-gold;
           cursor: pointer;
           margin-right: 5%;
         }
+        .btn {
+            .button-creator(20rem, 4.1rem, @white, @disney-gold, 2.5rem);  
+            font-family: 'WaltographRegular'; 
+            font-weight: lighter; 
+            font-style: normal;  
+            box-shadow: .1rem .1rem .5rem @disney-gold;  
+          }
 }
 
   
