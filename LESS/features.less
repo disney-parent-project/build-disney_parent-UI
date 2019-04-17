@@ -8,6 +8,11 @@
 	    margin:0 auto;
 	    display:flex;
         padding: 11.5rem 0;
+
+        @media @mobile{
+            flex-direction:column;
+            padding: 0 0;
+        }
         
     .third-width {
             width:33.3%;
@@ -21,10 +26,30 @@
             border-radius: 1rem;
             overflow: hidden;
 
+            @media @mobile {
+                width:90%;
+               margin-bottom:1rem;
+               border:none;
+               box-shadow: .5rem .5rem .5rem .5rem @disney-gold;  
+
+               h3{
+                   font-size:2rem;
+               }
+
+               p{
+                   font-size:1.2rem;
+               }
+            }
+
             .fa-user-plus, .fa-handshake, .fa-grin-alt{
                 margin-top:3rem;
                 color:@disney-dark-gold;
                 font-size:3rem;
+            }
+            .fa-app-store-ios, .fa-google-play{
+                color:@disney-dark-gold;
+                font-size:5rem;
+                margin:1rem 4rem;
             }
         }
 	}
