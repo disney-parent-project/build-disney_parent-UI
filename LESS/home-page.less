@@ -187,6 +187,23 @@
             font-size:0.8rem;
             padding:0.4rem;
           }
+
+          a {
+            text-decoration:none;
+            color:@disney-dark-gold;
+
+            a:visited{
+              color:@disney-dark-gold;
+            }
+  
+            a:focus{
+              color:@disney-dark-gold;
+            }
+          &:hover {
+              text-decoration: underline;
+              color: @disney-gold;
+            }
+          }
       }
     }
 
@@ -197,7 +214,7 @@
   padding-left:62rem;
   padding-right:58rem;
   background: rgba(black, 0.5);
-  
+
       @media @tablet{
         margin-top: -0.95rem;
         padding: 0 20rem 0 29rem;

@@ -392,6 +392,20 @@ img {
     padding: 0.4rem;
   }
 }
+.app-link .footer-container ul li a {
+  text-decoration: none;
+  color: #dd9222;
+}
+.app-link .footer-container ul li a a:visited {
+  color: #dd9222;
+}
+.app-link .footer-container ul li a a:focus {
+  color: #dd9222;
+}
+.app-link .footer-container ul li a:hover {
+  text-decoration: underline;
+  color: #E9B870;
+}
 .app-link h6 {
   color: #E9B870;
   font-size: 2rem;
