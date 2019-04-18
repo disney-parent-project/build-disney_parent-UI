@@ -4,6 +4,10 @@
     justify-content:center;
     height: 5rem;
     text-decoration: none;
+
+    @media @tablet {
+      height:7rem;
+    }
     .container {
       .width-100();
       display:flex;
@@ -15,6 +19,9 @@
       border-bottom: .2rem solid @disney-gold;
       box-shadow: .1rem .1rem .5rem @disney-gold;
       
+      @media @tablet {
+        padding: 0 0
+      }
       @media @mobile {
           flex-direction:column-reverse;
           min-height:8rem;
@@ -25,6 +32,9 @@
        font-family: 'Merienda', cursive;
         font-size: 1.6rem;
         
+        @media @tablet {
+          font-size:1.2rem;
+        }
         @media @mobile{
             margin-bottom:1rem;
         }
