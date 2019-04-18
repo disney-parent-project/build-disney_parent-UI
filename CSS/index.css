@@ -374,7 +374,7 @@ img {
   color: #E9B870;
   font-size: 2rem;
   margin-top: -0.98rem;
-  padding-left: 69rem;
+  padding-left: 62rem;
   padding-right: 58rem;
   background: rgba(0, 0, 0, 0.5);
 }
@@ -383,9 +383,6 @@ img {
     padding: 1rem 0 3rem 13.5rem;
     font-size: 1.2rem;
   }
-}
-* {
-  box-sizing: border-box;
 }
 /* Slideshow container */
 .slideshow-container {
@@ -885,7 +882,10 @@ img {
 }
 @media (max-width: 500px) {
   .abouthone {
-    margin: 12rem 0 8rem 12rem;
+    margin: 6rem 0 1rem 0;
+    padding: 0 0 2rem 10rem;
+    border-bottom: 2px solid #E9B870;
+    box-shadow: 0.1rem 0.2rem #E9B870;
   }
 }
 .full-width {
@@ -1086,13 +1086,13 @@ img {
   color: #E9B870;
   font-size: 2rem;
   margin-top: -0.98rem;
-  padding-left: 69rem;
+  padding-left: 62rem;
   padding-right: 58rem;
   background: rgba(0, 0, 0, 0.5);
 }
 @media (max-width: 500px) {
   .app-links h6 {
-    padding: 1rem 0 3rem 13.5rem;
+    padding: 2rem 0 2rem 13.5rem;
     font-size: 1.2rem;
     background: rgba(0, 0, 0, 0.5);
   }
