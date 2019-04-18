@@ -57,6 +57,9 @@
 
 .reviews {
     width: 100%;
+    @media @mobile{
+      flex-direction:column;
+    }
     .review-items {
       width: 100%;
       height: auto;
@@ -69,6 +72,9 @@
     .review-item {
       display: none; 
       width: 75%;
+      @media @mobile{
+        flex-direction:column;
+      }
       .review-item-title {
         min-width:7.5rem;
         font-size: 2.4rem;
@@ -120,6 +126,13 @@
     .review-image{
       height:23rem;
     }
+  }
+}
+.mobile{
+  display:none;
+
+  @media @mobile {
+    display:flex;
   }
 }
 .footer {
