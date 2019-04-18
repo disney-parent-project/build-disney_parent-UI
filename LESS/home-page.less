@@ -38,6 +38,10 @@
           margin-left:78rem;
           padding-bottom: 1rem;
 
+          @media @tablet {
+            margin-left:68rem;
+          }
+
           @media @mobile {
               margin-left: 8.8rem;
           }
@@ -49,17 +53,18 @@
 
         @media @mobile{
           line-height:2.3rem;
-
+        }
       span{
         font-family: 'WaltographRegular'; 
-        font-size:2.5rem;
+        font-size:3.5rem;
         color:@disney-blue;
 
         @media @mobile{
+          font-size:2.5rem;
           color:@disney-gold;
         }
       }     
-        }
+        
       }
     }
   }
@@ -139,8 +144,9 @@
           padding-left:10rem;
           color:@disney-gold;
           @media @mobile{
+            padding-left:0;
             font-size:1.2rem;
-            margin-left:2rem;
+            margin-left:1rem;
           }
       }
       div.container{
@@ -178,9 +184,17 @@
     h6{
       color:@disney-gold;
       font-size:2rem;
-      margin-left:69rem;
+      margin-top: -0.98rem;
+  padding-left:62rem;
+  padding-right:58rem;
+  background: rgba(black, 0.5);
+      @media @tablet{
+        margin-top: -0.95rem;
+        padding: 0 46rem 0 32rem;
+      }
+
       @media @mobile{
-        margin-left:11.6rem;
+        padding: 1rem 0 3rem 13.5rem;
         font-size:1.2rem;
       }
     }

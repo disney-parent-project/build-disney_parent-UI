@@ -213,6 +213,11 @@ img {
   margin-left: 78rem;
   padding-bottom: 1rem;
 }
+@media (max-width:1024px) {
+  .section .box .move {
+    margin-left: 68rem;
+  }
+}
 @media (max-width: 500px) {
   .section .box .move {
     margin-left: 8.8rem;
@@ -227,14 +232,15 @@ img {
   .section .box .description {
     line-height: 2.3rem;
   }
-  .section .box .description span {
-    font-family: 'WaltographRegular';
-    font-size: 2.5rem;
-    color: #303EFF;
-  }
 }
-@media (max-width: 500px) and (max-width: 500px) {
+.section .box .description span {
+  font-family: 'WaltographRegular';
+  font-size: 3.5rem;
+  color: #303EFF;
+}
+@media (max-width: 500px) {
   .section .box .description span {
+    font-size: 2.5rem;
     color: #E9B870;
   }
 }
@@ -336,8 +342,9 @@ img {
 }
 @media (max-width: 500px) {
   .app-link .footer-container h4 {
+    padding-left: 0;
     font-size: 1.2rem;
-    margin-left: 2rem;
+    margin-left: 1rem;
   }
 }
 .app-link .footer-container div.container {
@@ -372,16 +379,22 @@ img {
 .app-link h6 {
   color: #E9B870;
   font-size: 2rem;
-  margin-left: 69rem;
+  margin-top: -0.98rem;
+  padding-left: 62rem;
+  padding-right: 58rem;
+  background: rgba(0, 0, 0, 0.5);
+}
+@media (max-width:1024px) {
+  .app-link h6 {
+    margin-top: -0.95rem;
+    padding: 0 46rem 0 32rem;
+  }
 }
 @media (max-width: 500px) {
   .app-link h6 {
-    margin-left: 11.6rem;
+    padding: 1rem 0 3rem 13.5rem;
     font-size: 1.2rem;
   }
-}
-* {
-  box-sizing: border-box;
 }
 /* Slideshow container */
 .slideshow-container {
@@ -754,7 +767,7 @@ img {
 }
 @media (max-width: 500px) {
   .review-section .reviews .review-item {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 }
 .review-section .reviews .review-item .review-item-title {
@@ -765,6 +778,11 @@ img {
   margin-left: 4rem;
   color: #41414C;
 }
+@media (max-width: 500px) {
+  .review-section .reviews .review-item .review-item-title {
+    padding-bottom: 1rem;
+  }
+}
 .review-section .reviews .review-item-selected {
   display: flex;
   justify-content: space-between;
@@ -774,6 +792,11 @@ img {
   padding: 10rem 4rem 0 0;
   font-family: 'Merienda', cursive;
   font-size: 1.4rem;
+}
+@media (max-width: 500px) {
+  .review-section .reviews .review-item-selected .review-item-description {
+    padding-top: 0;
+  }
 }
 .review-section .reviews .reviews-links {
   display: flex;
@@ -866,12 +889,15 @@ img {
   }
 }
 .abouthone {
-  margin: 2rem 0 2rem 60rem;
+  margin: 2rem 0 2rem 70rem;
   color: #E9B870;
 }
 @media (max-width: 500px) {
   .abouthone {
-    margin: 12rem 0 8rem 12rem;
+    margin: 6rem 0 1rem 0;
+    padding: 0 0 2rem 10rem;
+    border-bottom: 2px solid #E9B870;
+    box-shadow: 0.1rem 0.2rem #E9B870;
   }
 }
 .full-width {
@@ -1034,13 +1060,14 @@ img {
 }
 @media (max-width: 500px) {
   .app-links .footer-container h4 {
+    padding-left: 0;
     font-size: 1.2rem;
-    margin-left: 2rem;
+    margin-left: 1rem;
   }
 }
 .app-links .footer-container div.container {
   justify-content: space-around;
-  border-right: 2px solid #E9B870;
+  background: rgba(0, 0, 0, 0.5);
 }
 .app-links .footer-container ul {
   list-style: none;
@@ -1059,7 +1086,6 @@ img {
   font-family: 'Merienda', cursive;
   font-size: 1.4rem;
   color: #dd9222;
-  background: rgba(0, 0, 0, 0.5);
 }
 @media (max-width: 500px) {
   .app-links .footer-container ul li {
@@ -1071,13 +1097,15 @@ img {
 .app-links h6 {
   color: #E9B870;
   font-size: 2rem;
-  margin-left: 69rem;
-  margin-right: 58rem;
+  margin-top: -0.98rem;
+  padding-left: 62rem;
+  padding-right: 58rem;
   background: rgba(0, 0, 0, 0.5);
 }
 @media (max-width: 500px) {
   .app-links h6 {
-    margin-left: 11.6rem;
+    padding: 2rem 0 2rem 13.5rem;
     font-size: 1.2rem;
+    background: rgba(0, 0, 0, 0.5);
   }
 }
