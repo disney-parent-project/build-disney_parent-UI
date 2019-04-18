@@ -719,11 +719,23 @@ img {
   width: 33%;
   margin: 0 auto;
 }
+@media (min-width:795px) and (max-width:1024px) {
+  .features h3 {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+}
 .features p {
   font-family: 'Merienda', cursive;
   font-size: 1.4rem;
   line-height: 3rem;
   padding: 0 5rem 1rem;
+}
+@media (min-width:795px) and (max-width:1024px) {
+  .features p {
+    font-size: 1.2rem;
+    padding: 0 1rem 1rem;
+  }
 }
 .header {
   min-height: 50rem;
@@ -747,6 +759,12 @@ img {
   color: #FFFFFF;
   padding: 16.3rem 0 2.5rem 61.4rem;
 }
+@media (min-width:795px) and (max-width:1024px) {
+  .header h1 {
+    font-size: 4rem;
+    padding: 5.3rem 0 2.5rem 6.4rem;
+  }
+}
 @media (max-width: 500px) {
   .header h1 {
     padding: 2rem 0 1rem;
@@ -759,6 +777,11 @@ img {
   font-size: 3rem;
   color: #FFFFFF;
   padding: 18.6rem 0 2.5rem 36.5rem;
+}
+@media (min-width:795px) and (max-width:1024px) {
+  .header h3 {
+    padding: 28.6rem 0 2.5rem 1.5rem;
+  }
 }
 @media (max-width: 500px) {
   .header h3 {
@@ -809,6 +832,11 @@ img {
   margin-left: 4rem;
   color: #41414C;
 }
+@media (min-width:795px) and (max-width:1024px) {
+  .review-section .reviews .review-item .review-item-title {
+    font-size: 2rem;
+  }
+}
 @media (max-width: 500px) {
   .review-section .reviews .review-item .review-item-title {
     padding-bottom: 1rem;
@@ -823,6 +851,13 @@ img {
   padding: 10rem 4rem 0 0;
   font-family: 'Merienda', cursive;
   font-size: 1.4rem;
+}
+@media (min-width:795px) and (max-width:1024px) {
+  .review-section .reviews .review-item-selected .review-item-description {
+    line-height: 1.5;
+    font-size: 1.4rem;
+    padding-bottom: 1rem;
+  }
 }
 @media (max-width: 500px) {
   .review-section .reviews .review-item-selected .review-item-description {
@@ -845,6 +880,11 @@ img {
   background-color: #636eff;
   color: #E9B870;
 }
+@media (min-width:795px) and (max-width:1024px) {
+  .review-section .reviews .reviews-link {
+    padding: 10px 46px;
+  }
+}
 .review-section .reviews .reviews-link-selected {
   z-index: 2;
   border-right: 0.1rem solid #dd9222;
@@ -856,6 +896,11 @@ img {
 }
 .review-section .reviews .review-image {
   height: 23rem;
+}
+@media (min-width:795px) and (max-width:1024px) {
+  .review-section .reviews .review-image {
+    height: 12rem;
+  }
 }
 .mobile {
   display: none;
@@ -876,6 +921,11 @@ img {
   font-size: 4.5rem;
   color: #E9B870;
   padding: 27.3rem 0 5.5rem 81rem;
+}
+@media (min-width:795px) and (max-width:1024px) {
+  .footer h2 {
+    padding: 7.3rem 0 5.5rem 7rem;
+  }
 }
 @media (max-width: 500px) {
   .footer h2 {
@@ -912,6 +962,11 @@ img {
 .footer .btn:hover {
   background: #303EFF;
   color: #FFFFFF;
+}
+@media (min-width:795px) and (max-width:1024px) {
+  .footer .btn {
+    margin-left: 18rem;
+  }
 }
 @media (max-width: 500px) {
   .footer .btn {
@@ -971,6 +1026,11 @@ img {
   margin-top: 2rem;
   margin-left: 2rem;
   height: 23rem;
+}
+@media (min-width:795px) and (max-width:1024px) {
+  .half-width img {
+    height: 12rem;
+  }
 }
 @media (max-width: 500px) {
   .half-width img {
@@ -1074,6 +1134,11 @@ img {
   color: #E9B870;
   padding: 27.3rem 0 5.5rem 81rem;
 }
+@media (min-width:795px) and (max-width:1024px) {
+  .app-links h2 {
+    padding: 1.3rem 0 5.5rem 10rem;
+  }
+}
 @media (max-width: 500px) {
   .app-links h2 {
     padding: 3.1rem 0;
@@ -1109,6 +1174,11 @@ img {
 .app-links .btn:hover {
   background: #303EFF;
   color: #FFFFFF;
+}
+@media (min-width:795px) and (max-width:1024px) {
+  .app-links .btn {
+    margin-left: 33rem;
+  }
 }
 @media (max-width: 500px) {
   .app-links .btn {
