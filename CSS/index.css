@@ -213,6 +213,11 @@ img {
   margin-left: 78rem;
   padding-bottom: 1rem;
 }
+@media (max-width:1024px) {
+  .section .box .move {
+    margin-left: 68rem;
+  }
+}
 @media (max-width: 500px) {
   .section .box .move {
     margin-left: 8.8rem;
@@ -227,14 +232,15 @@ img {
   .section .box .description {
     line-height: 2.3rem;
   }
-  .section .box .description span {
-    font-family: 'WaltographRegular';
-    font-size: 2.5rem;
-    color: #303EFF;
-  }
 }
-@media (max-width: 500px) and (max-width: 500px) {
+.section .box .description span {
+  font-family: 'WaltographRegular';
+  font-size: 3.5rem;
+  color: #303EFF;
+}
+@media (max-width: 500px) {
   .section .box .description span {
+    font-size: 2.5rem;
     color: #E9B870;
   }
 }
@@ -377,6 +383,12 @@ img {
   padding-left: 62rem;
   padding-right: 58rem;
   background: rgba(0, 0, 0, 0.5);
+}
+@media (max-width:1024px) {
+  .app-link h6 {
+    margin-top: -0.95rem;
+    padding: 0 46rem 0 32rem;
+  }
 }
 @media (max-width: 500px) {
   .app-link h6 {
