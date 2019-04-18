@@ -336,8 +336,9 @@ img {
 }
 @media (max-width: 500px) {
   .app-link .footer-container h4 {
+    padding-left: 0;
     font-size: 1.2rem;
-    margin-left: 2rem;
+    margin-left: 1rem;
   }
 }
 .app-link .footer-container div.container {
@@ -372,11 +373,14 @@ img {
 .app-link h6 {
   color: #E9B870;
   font-size: 2rem;
-  margin-left: 69rem;
+  margin-top: -0.98rem;
+  padding-left: 69rem;
+  padding-right: 58rem;
+  background: rgba(0, 0, 0, 0.5);
 }
 @media (max-width: 500px) {
   .app-link h6 {
-    margin-left: 11.6rem;
+    padding: 1rem 0 3rem 13.5rem;
     font-size: 1.2rem;
   }
 }
@@ -754,7 +758,7 @@ img {
 }
 @media (max-width: 500px) {
   .review-section .reviews .review-item {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 }
 .review-section .reviews .review-item .review-item-title {
@@ -765,6 +769,11 @@ img {
   margin-left: 4rem;
   color: #41414C;
 }
+@media (max-width: 500px) {
+  .review-section .reviews .review-item .review-item-title {
+    padding-bottom: 1rem;
+  }
+}
 .review-section .reviews .review-item-selected {
   display: flex;
   justify-content: space-between;
@@ -774,6 +783,11 @@ img {
   padding: 10rem 4rem 0 0;
   font-family: 'Merienda', cursive;
   font-size: 1.4rem;
+}
+@media (max-width: 500px) {
+  .review-section .reviews .review-item-selected .review-item-description {
+    padding-top: 0;
+  }
 }
 .review-section .reviews .reviews-links {
   display: flex;
@@ -866,7 +880,7 @@ img {
   }
 }
 .abouthone {
-  margin: 2rem 0 2rem 60rem;
+  margin: 2rem 0 2rem 70rem;
   color: #E9B870;
 }
 @media (max-width: 500px) {
@@ -1034,13 +1048,14 @@ img {
 }
 @media (max-width: 500px) {
   .app-links .footer-container h4 {
+    padding-left: 0;
     font-size: 1.2rem;
-    margin-left: 2rem;
+    margin-left: 1rem;
   }
 }
 .app-links .footer-container div.container {
   justify-content: space-around;
-  border-right: 2px solid #E9B870;
+  background: rgba(0, 0, 0, 0.5);
 }
 .app-links .footer-container ul {
   list-style: none;
@@ -1059,7 +1074,6 @@ img {
   font-family: 'Merienda', cursive;
   font-size: 1.4rem;
   color: #dd9222;
-  background: rgba(0, 0, 0, 0.5);
 }
 @media (max-width: 500px) {
   .app-links .footer-container ul li {
@@ -1071,13 +1085,15 @@ img {
 .app-links h6 {
   color: #E9B870;
   font-size: 2rem;
-  margin-left: 69rem;
-  margin-right: 58rem;
+  margin-top: -0.98rem;
+  padding-left: 69rem;
+  padding-right: 58rem;
   background: rgba(0, 0, 0, 0.5);
 }
 @media (max-width: 500px) {
   .app-links h6 {
-    margin-left: 11.6rem;
+    padding: 1rem 0 3rem 13.5rem;
     font-size: 1.2rem;
+    background: rgba(0, 0, 0, 0.5);
   }
 }
