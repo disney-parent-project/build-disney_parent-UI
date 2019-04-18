@@ -14,12 +14,20 @@
       padding: 0 1rem;
       border-bottom: .2rem solid @disney-gold;
       box-shadow: .1rem .1rem .5rem @disney-gold;
+      
+      @media @mobile {
+          flex-direction:column-reverse;
+          min-height:8rem;
+      }
       }
       .container-left {
        .flex(none, center);
        font-family: 'Merienda', cursive;
         font-size: 1.6rem;
         
+        @media @mobile{
+            margin-bottom:1rem;
+        }
         ul{
             flex-wrap:wrap;
         }
@@ -29,14 +37,23 @@
           text-decoration:none;;
           padding: 0 2rem;
 
+
           a {
               text-decoration: none;
+         
+          }
+          a:visited{
+            color:@disney-blue;
+          }
 
+          a:focus{
+            color:@disney-gold;
+          }
         &:hover {
             text-decoration: underline;
             color: @disney-blue;
           }
-          }
+          
         }
       }
       .container-center {
@@ -53,6 +70,10 @@
             font-weight: lighter; 
             font-style: normal;  
             box-shadow: .1rem .1rem .5rem @disney-gold;  
+
+            @media @mobile{
+                display:none;
+            }
           }
 }
 

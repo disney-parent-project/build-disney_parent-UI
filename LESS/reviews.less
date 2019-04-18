@@ -4,17 +4,41 @@
 	background: url('../img/castle.jpg') center center;
 	background-size:cover;
   position:relative;
+
+  @media @mobile {
+    margin-top:3rem;
+    max-height:30rem;
+    height:auto;
+    background-size:unset;
+    background-color:@white;
+    opacity:0.95;
+  }
   
   h1 {
 		font-size: 6rem;
 		color:@white;
     padding: 16.3rem 0 2.5rem 61.4rem;
+
+    @media @mobile {
+      padding: 2rem 0 1rem;
+      font-size:3rem;
+      color:@disney-blue;
+    //   background-color:@white;
+    // opacity:0.8;
+    }
   }
     h3 {
       font-family: 'Merienda', cursive;
       font-size: 3rem;
       color:@white;
       padding: 18.6rem 0 2.5rem 36.5rem;
+
+      @media @mobile{
+        padding: 0 0 0 0;
+        font-size:1.8rem;
+        
+      
+      }
   
     }
 	}
@@ -25,10 +49,10 @@
     min-height:40rem;
     margin: 4.5rem auto;
     display: flex;
-    background:linear-gradient(to right, #E9B870, #fcf4e9 );
+   // background:linear-gradient(to right, #E9B870, #fcf4e9 );
     // border: .1rem solid @disney-gold;
     box-shadow: .1rem .1rem .5rem @disney-dark-gold;
-    // border-radius: 1rem;
+    border-radius: 3rem;
     overflow: hidden;
 
 .reviews {
@@ -40,36 +64,47 @@
       display: flex;
       justify-content: center;
       padding-top: 4.4rem;
+      border-radius: 2rem;
     }
     .review-item {
       display: none; 
-  
       width: 75%;
       .review-item-title {
-        font-size: 24px;
+        min-width:7.5rem;
+        font-size: 2.4rem;
         font-weight: bold;
-        padding-bottom: 10px;
+        padding-top: 2rem;
+        margin-left:4rem;
+        color:#41414C;
       }
     }
     .review-item-selected {
       display: flex;
       justify-content: space-between;
+      color:#41414C;
+
+      .review-item-description{
+        padding: 10rem 4rem 0 0;
+        font-family: 'Merienda', cursive;
+        font-size:1.4rem;
+
+      }
     }
   
     .reviews-links {
       display: flex;
-      background-color: @disney-purple;
+      background-color: @disney-blue;
     }
   
     .reviews-link {
       padding: 10px 72px;
       font-size: 24px;
-      background-color: @disney-purple;
+      background-color: @disney-blue;
       border-right: 1px solid white;
       color: @white;
       cursor: pointer;
       &:hover {
-        background-color: @disney-light-purple;
+        background-color: @disney-light-blue;
         color:@disney-gold;
       }
     }
@@ -79,7 +114,7 @@
       background-color: @white;
       color:@disney-gold;
       &:hover {
-        background-color: @disney-light-purple;
+        background-color: @disney-light-blue;
       } 
     }
     .review-image{
@@ -88,7 +123,7 @@
   }
 }
 .footer {
-  min-height:50rem;
+  min-height:60rem;
 	height:100%;
 	background: url('../img/castle-day.jpg') center center;
 	background-size:cover;
@@ -97,7 +132,12 @@
   h2 {
 		font-size: 4.5rem;
 		color:@disney-gold;
-    padding: 27.3rem 0 5.5rem 83rem;
+    padding: 27.3rem 0 5.5rem 81rem;
+
+    @media @mobile{
+      padding: 3.1rem 0;
+      font-size:3rem;
+    }
   }
 
   .btn {
@@ -106,6 +146,12 @@
     font-weight: lighter; 
     font-style: normal;  
     margin-left: 104rem;
+    border-color: #E9B870;
     box-shadow: .5rem .5rem .5rem @disney-gold;  
+
+    @media @mobile {
+      margin-left:14rem;
+      width:18rem;
+    }
   }
 }
