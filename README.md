@@ -1,1 +1,3 @@
 # build-disney_parent-UI
+
+The  marketing website is all about telling the target audience the Disney Parent App. The design has the same color scheme as the react app and gives the target audience a description of what the app entails. There are multiple buttons on the page linking the user to the app, one on the top of each page, the other at the bottom. The website is multi-page, having an about page for the development team and a review page, highlighting reviews. The webiste is also responsive, having designs for 500px and below for mobile responsiveness and also 800px for tablet view. 

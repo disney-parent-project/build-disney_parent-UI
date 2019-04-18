@@ -56,3 +56,5 @@ class TabLink {
   });
   })
   
+  ScrollReveal().reveal('.headeron',{ delay: 500 });
+  ScrollReveal().reveal('.review-item-selected',{ delay: 500 });
