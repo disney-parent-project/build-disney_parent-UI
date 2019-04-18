@@ -19,6 +19,11 @@
 		color:@white;
     padding: 16.3rem 0 2.5rem 61.4rem;
 
+    @media @tablet{
+      font-size:4rem;
+      padding: 5.3rem 0 2.5rem 6.4rem
+    }
+
     @media @mobile {
       padding: 2rem 0 1rem;
       font-size:3rem;
@@ -32,6 +37,10 @@
       font-size: 3rem;
       color:@white;
       padding: 18.6rem 0 2.5rem 36.5rem;
+
+      @media @tablet{
+        padding: 28.6rem 0 2.5rem 1.5rem;
+      }
 
       @media @mobile{
         padding: 0 0 0 0;
@@ -63,7 +72,7 @@
     .review-items {
       width: 100%;
       height: auto;
-      min-height:300px;
+      min-height:30rem;
       display: flex;
       justify-content: center;
       padding-top: 4.4rem;
@@ -83,6 +92,9 @@
         margin-left:4rem;
         color:#41414C;
 
+        @media @tablet{
+          font-size: 2rem;
+        }
         @media @mobile{
           padding-bottom:1rem;
         }
@@ -97,6 +109,11 @@
         padding: 10rem 4rem 0 0;
         font-family: 'Merienda', cursive;
         font-size:1.4rem;
+        @media @tablet{
+          line-height: 1.5;
+          font-size: 1.4rem;
+          padding-bottom: 1rem;
+        }
         @media @mobile {
           padding-top:0;
         }
@@ -110,20 +127,23 @@
     }
   
     .reviews-link {
-      padding: 10px 72px;
-      font-size: 24px;
+      padding: 1rem 7.2rem;
+      font-size: 2.4rem;
       background-color: @disney-blue;
-      border-right: 1px solid white;
+      border-right: 0.1rem solid white;
       color: @white;
       cursor: pointer;
       &:hover {
         background-color: @disney-light-blue;
         color:@disney-gold;
       }
+      @media @tablet {
+        padding: 10px 46px;
+      }
     }
     .reviews-link-selected {
       z-index: 2;
-      border-right: 1px solid @disney-dark-gold;
+      border-right: 0.1rem solid @disney-dark-gold;
       background-color: @white;
       color:@disney-gold;
       &:hover {
@@ -132,6 +152,10 @@
     }
     .review-image{
       height:23rem;
+
+      @media @tablet {
+        height:12rem;
+      }
     }
   }
 }
@@ -154,6 +178,10 @@
 		color:@disney-gold;
     padding: 27.3rem 0 5.5rem 81rem;
 
+    @media @tablet {
+      padding: 7.3rem 0 5.5rem 7rem;
+    }
+
     @media @mobile{
       padding: 3.1rem 0;
       font-size:3rem;
@@ -169,6 +197,9 @@
     border-color: #E9B870;
     box-shadow: .5rem .5rem .5rem @disney-gold;  
 
+    @media @tablet {
+      margin-left: 18rem;
+    }
     @media @mobile {
       margin-left:14rem;
       width:18rem;

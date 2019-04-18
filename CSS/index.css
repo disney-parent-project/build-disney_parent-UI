@@ -154,7 +154,7 @@ h2 {
 }
 h4 {
   font-size: 2.5rem;
-  padding-bottom: 10px;
+  padding-bottom: 1rem;
 }
 p {
   line-height: 1.5;
@@ -213,9 +213,9 @@ img {
   margin-left: 78rem;
   padding-bottom: 1rem;
 }
-@media (max-width:1024px) {
+@media (min-width:795px) and (max-width:1024px) {
   .section .box .move {
-    margin-left: 68rem;
+    margin-left: 31rem;
   }
 }
 @media (max-width: 500px) {
@@ -283,6 +283,12 @@ img {
   padding: 4rem 0 0 30rem;
   color: #dd9222;
 }
+@media (min-width:795px) and (max-width:1024px) {
+  .app-link h2 {
+    margin: 0 0 2.5rem 0.5rem;
+    padding: 4rem 0 0 15rem;
+  }
+}
 @media (max-width: 500px) {
   .app-link h2 {
     font-size: 2.8rem;
@@ -302,7 +308,7 @@ img {
   height: 4.1rem;
   background-color: #FFFFFF;
   color: #E9B870;
-  border: 1px solid #636eff;
+  border: 0.1rem solid #636eff;
   cursor: pointer;
   font-size: 2.5rem;
   font-family: 'WaltographRegular';
@@ -321,6 +327,11 @@ img {
   background: #303EFF;
   color: #FFFFFF;
 }
+@media (min-width:795px) and (max-width:1024px) {
+  .app-link .btn {
+    margin-left: 31rem;
+  }
+}
 @media (max-width: 500px) {
   .app-link .btn {
     margin-left: 15rem;
@@ -330,6 +341,11 @@ img {
 .app-link .footer-container {
   display: flex;
   margin-top: 21rem;
+}
+@media (min-width:795px) and (max-width:1024px) {
+  .app-link .footer-container {
+    padding-left: 3rem;
+  }
 }
 @media (max-width: 500px) {
   .app-link .footer-container {
@@ -384,10 +400,10 @@ img {
   padding-right: 58rem;
   background: rgba(0, 0, 0, 0.5);
 }
-@media (max-width:1024px) {
+@media (min-width:795px) and (max-width:1024px) {
   .app-link h6 {
     margin-top: -0.95rem;
-    padding: 0 46rem 0 32rem;
+    padding: 0 20rem 0 29rem;
   }
 }
 @media (max-width: 500px) {
@@ -398,7 +414,7 @@ img {
 }
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 100rem;
   position: relative;
   margin: auto;
 }
@@ -418,19 +434,19 @@ img {
   position: absolute;
   top: 50%;
   width: auto;
-  margin-top: -22px;
-  padding: 16px;
+  margin-top: -2.2rem;
+  padding: 1.6rem;
   color: #E9B870;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 1.8rem;
   transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+  border-radius: 0 0.3rem 0.3rem 0;
   user-select: none;
 }
 /* Position the "next button" to the right */
 .next {
   right: 0;
-  border-radius: 3px 0 0 3px;
+  border-radius: 0.3rem 0 0 0.3rem;
 }
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
@@ -508,6 +524,11 @@ img {
   height: 5rem;
   text-decoration: none;
 }
+@media (min-width:795px) and (max-width:1024px) {
+  .nav-bar {
+    height: 7rem;
+  }
+}
 .nav-bar .container {
   width: 100%;
   display: flex;
@@ -518,6 +539,11 @@ img {
   padding: 0 1rem;
   border-bottom: 0.2rem solid #E9B870;
   box-shadow: 0.1rem 0.1rem 0.5rem #E9B870;
+}
+@media (min-width:795px) and (max-width:1024px) {
+  .nav-bar .container {
+    padding: 0 0;
+  }
 }
 @media (max-width: 500px) {
   .nav-bar .container {
@@ -532,6 +558,11 @@ img {
   flex-direction: row;
   font-family: 'Merienda', cursive;
   font-size: 1.6rem;
+}
+@media (min-width:795px) and (max-width:1024px) {
+  .nav-bar .container-left {
+    font-size: 1.2rem;
+  }
 }
 @media (max-width: 500px) {
   .nav-bar .container-left {
@@ -582,7 +613,7 @@ img {
   height: 4.1rem;
   background-color: #FFFFFF;
   color: #E9B870;
-  border: 1px solid #636eff;
+  border: 0.1rem solid #636eff;
   cursor: pointer;
   font-size: 2.5rem;
   font-family: 'WaltographRegular';
@@ -688,11 +719,23 @@ img {
   width: 33%;
   margin: 0 auto;
 }
+@media (min-width:795px) and (max-width:1024px) {
+  .features h3 {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+}
 .features p {
   font-family: 'Merienda', cursive;
   font-size: 1.4rem;
   line-height: 3rem;
   padding: 0 5rem 1rem;
+}
+@media (min-width:795px) and (max-width:1024px) {
+  .features p {
+    font-size: 1.2rem;
+    padding: 0 1rem 1rem;
+  }
 }
 .header {
   min-height: 50rem;
@@ -716,6 +759,12 @@ img {
   color: #FFFFFF;
   padding: 16.3rem 0 2.5rem 61.4rem;
 }
+@media (min-width:795px) and (max-width:1024px) {
+  .header h1 {
+    font-size: 4rem;
+    padding: 5.3rem 0 2.5rem 6.4rem;
+  }
+}
 @media (max-width: 500px) {
   .header h1 {
     padding: 2rem 0 1rem;
@@ -728,6 +777,11 @@ img {
   font-size: 3rem;
   color: #FFFFFF;
   padding: 18.6rem 0 2.5rem 36.5rem;
+}
+@media (min-width:795px) and (max-width:1024px) {
+  .header h3 {
+    padding: 28.6rem 0 2.5rem 1.5rem;
+  }
 }
 @media (max-width: 500px) {
   .header h3 {
@@ -755,7 +809,7 @@ img {
 .review-section .reviews .review-items {
   width: 100%;
   height: auto;
-  min-height: 300px;
+  min-height: 30rem;
   display: flex;
   justify-content: center;
   padding-top: 4.4rem;
@@ -778,6 +832,11 @@ img {
   margin-left: 4rem;
   color: #41414C;
 }
+@media (min-width:795px) and (max-width:1024px) {
+  .review-section .reviews .review-item .review-item-title {
+    font-size: 2rem;
+  }
+}
 @media (max-width: 500px) {
   .review-section .reviews .review-item .review-item-title {
     padding-bottom: 1rem;
@@ -793,6 +852,13 @@ img {
   font-family: 'Merienda', cursive;
   font-size: 1.4rem;
 }
+@media (min-width:795px) and (max-width:1024px) {
+  .review-section .reviews .review-item-selected .review-item-description {
+    line-height: 1.5;
+    font-size: 1.4rem;
+    padding-bottom: 1rem;
+  }
+}
 @media (max-width: 500px) {
   .review-section .reviews .review-item-selected .review-item-description {
     padding-top: 0;
@@ -803,10 +869,10 @@ img {
   background-color: #303EFF;
 }
 .review-section .reviews .reviews-link {
-  padding: 10px 72px;
-  font-size: 24px;
+  padding: 1rem 7.2rem;
+  font-size: 2.4rem;
   background-color: #303EFF;
-  border-right: 1px solid white;
+  border-right: 0.1rem solid white;
   color: #FFFFFF;
   cursor: pointer;
 }
@@ -814,9 +880,14 @@ img {
   background-color: #636eff;
   color: #E9B870;
 }
+@media (min-width:795px) and (max-width:1024px) {
+  .review-section .reviews .reviews-link {
+    padding: 10px 46px;
+  }
+}
 .review-section .reviews .reviews-link-selected {
   z-index: 2;
-  border-right: 1px solid #dd9222;
+  border-right: 0.1rem solid #dd9222;
   background-color: #FFFFFF;
   color: #E9B870;
 }
@@ -825,6 +896,11 @@ img {
 }
 .review-section .reviews .review-image {
   height: 23rem;
+}
+@media (min-width:795px) and (max-width:1024px) {
+  .review-section .reviews .review-image {
+    height: 12rem;
+  }
 }
 .mobile {
   display: none;
@@ -846,6 +922,11 @@ img {
   color: #E9B870;
   padding: 27.3rem 0 5.5rem 81rem;
 }
+@media (min-width:795px) and (max-width:1024px) {
+  .footer h2 {
+    padding: 7.3rem 0 5.5rem 7rem;
+  }
+}
 @media (max-width: 500px) {
   .footer h2 {
     padding: 3.1rem 0;
@@ -863,7 +944,7 @@ img {
   height: 4.1rem;
   background-color: #FFFFFF;
   color: #E9B870;
-  border: 1px solid #636eff;
+  border: 0.1rem solid #636eff;
   cursor: pointer;
   font-size: 2.5rem;
   font-family: 'WaltographRegular';
@@ -882,6 +963,11 @@ img {
   background: #303EFF;
   color: #FFFFFF;
 }
+@media (min-width:795px) and (max-width:1024px) {
+  .footer .btn {
+    margin-left: 18rem;
+  }
+}
 @media (max-width: 500px) {
   .footer .btn {
     margin-left: 14rem;
@@ -892,11 +978,16 @@ img {
   margin: 2rem 0 2rem 70rem;
   color: #E9B870;
 }
+@media (min-width:795px) and (max-width:1024px) {
+  .abouthone {
+    margin: 2rem 0 2rem 26rem;
+  }
+}
 @media (max-width: 500px) {
   .abouthone {
     margin: 6rem 0 1rem 0;
     padding: 0 0 2rem 10rem;
-    border-bottom: 2px solid #E9B870;
+    border-bottom: 0.2rem solid #E9B870;
     box-shadow: 0.1rem 0.2rem #E9B870;
   }
 }
@@ -936,6 +1027,11 @@ img {
   margin-left: 2rem;
   height: 23rem;
 }
+@media (min-width:795px) and (max-width:1024px) {
+  .half-width img {
+    height: 12rem;
+  }
+}
 @media (max-width: 500px) {
   .half-width img {
     margin-left: 0;
@@ -947,6 +1043,12 @@ img {
   margin-top: 6rem;
   margin-left: 2rem;
 }
+@media (min-width:795px) and (max-width:1024px) {
+  .half-width h3 {
+    font-size: 3.8rem;
+    margin-top: 9rem;
+  }
+}
 @media (max-width: 500px) {
   .half-width h3 {
     margin-left: 6rem;
@@ -957,6 +1059,13 @@ img {
   font-size: 4.5rem;
   margin-top: 8rem;
   text-shadow: 0.2rem 0.2rem beige;
+}
+@media (min-width:795px) and (max-width:1024px) {
+  .half-width h5 {
+    font-size: 2.5rem;
+    margin-top: 18rem;
+    margin-left: -7rem;
+  }
 }
 @media (max-width: 500px) {
   .half-width h5 {
@@ -974,9 +1083,20 @@ img {
 .long h3 {
   margin-left: 0.8rem;
 }
+@media (min-width:795px) and (max-width:1024px) {
+  .long h3 {
+    margin-left: -0.2rem;
+  }
+}
 .long h5 {
   margin-top: 6rem;
   margin-left: 0.5rem;
+}
+@media (min-width:795px) and (max-width:1024px) {
+  .long h5 {
+    margin-top: 17rem;
+    margin-left: -0.5rem;
+  }
 }
 @media (max-width: 500px) {
   .long h5 {
@@ -986,6 +1106,11 @@ img {
 .lead {
   margin-left: 43rem;
 }
+@media (min-width:795px) and (max-width:1024px) {
+  .lead {
+    margin-left: 24rem;
+  }
+}
 @media (max-width: 500px) {
   .lead {
     margin-left: 3rem;
@@ -993,6 +1118,11 @@ img {
 }
 .lead h3 {
   margin-left: 6rem;
+}
+@media (min-width:795px) and (max-width:1024px) {
+  .lead h3 {
+    margin-left: 1rem;
+  }
 }
 .app-links {
   background: url('../img/mnd.jpg') center center;
@@ -1003,6 +1133,11 @@ img {
   font-size: 4.5rem;
   color: #E9B870;
   padding: 27.3rem 0 5.5rem 81rem;
+}
+@media (min-width:795px) and (max-width:1024px) {
+  .app-links h2 {
+    padding: 1.3rem 0 5.5rem 10rem;
+  }
 }
 @media (max-width: 500px) {
   .app-links h2 {
@@ -1021,7 +1156,7 @@ img {
   height: 4.1rem;
   background-color: #FFFFFF;
   color: #E9B870;
-  border: 1px solid #636eff;
+  border: 0.1rem solid #636eff;
   cursor: pointer;
   font-size: 2.5rem;
   font-family: 'WaltographRegular';
@@ -1039,6 +1174,11 @@ img {
 .app-links .btn:hover {
   background: #303EFF;
   color: #FFFFFF;
+}
+@media (min-width:795px) and (max-width:1024px) {
+  .app-links .btn {
+    margin-left: 33rem;
+  }
 }
 @media (max-width: 500px) {
   .app-links .btn {
@@ -1101,6 +1241,12 @@ img {
   padding-left: 62rem;
   padding-right: 58rem;
   background: rgba(0, 0, 0, 0.5);
+}
+@media (min-width:795px) and (max-width:1024px) {
+  .app-links h6 {
+    padding-left: 29rem;
+    padding-right: 20rem;
+  }
 }
 @media (max-width: 500px) {
   .app-links h6 {
