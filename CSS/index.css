@@ -583,6 +583,11 @@ img {
     margin-bottom: 1rem;
   }
 }
+@media (max-width:475px) {
+  .nav-bar .container-left {
+    font-size: 1.4rem;
+  }
+}
 .nav-bar .container-left ul {
   flex-wrap: wrap;
 }
