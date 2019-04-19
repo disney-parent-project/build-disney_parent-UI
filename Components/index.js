@@ -8,7 +8,7 @@ ScrollReveal().reveal('.container-center', {
 // ScrollReveal().reveal('.span', { easing: 'ease-in' });
 ScrollReveal({ distance: '60px' });
 ScrollReveal().reveal('.title', { origin: 'top' });
-ScrollReveal().reveal('.move', { origin: 'bottom' },);
+ScrollReveal().reveal('.move', { origin: 'bottom' });
 
 ScrollReveal().reveal('.fa-user-plus', { origin: 'left' });
 
